@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: "Georgia", serif;
+    background-color: #FFF5E1; /* Warm beige background */
+    color: #4a2c2a; /* Warm brown text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Center title */
+header {
+    background: #E97451; /* Warm reddish-orange */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between dropdown and About */
+    padding: 10px;
+    background: #FFA07A; /* Light warm orange */
+}
+
+/* Left-align dropdown */
+.nav-left {
+    display: flex;
+    gap: 15px;
+}
+
+/* Move About link to the right */
+.nav-right {
+    margin-left: auto;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: space-between; /* Pushes text and image apart */
+    max-width: 1000px;
+    margin: 40px auto; /* Center content */
+}
+
+.recipe-content {
+    width: 50%; /* Text stays on the left */
+    margin-left: 20px;
+}
+
+.recipe-img {
+    width: 35%;  /* Adjust size */
+    max-width: 350px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px; /* Align image to the right side of the page */
+    top: 200px; /* Adjust vertical position */
+}
+
+
+/* Backstory section */
+.backstory {
+    max-width: 700px;
+    margin: 20px 20px; /* Left-aligned */
+    font-style: italic;
+    color: #6a4f4b; /* Warmer text */
+}
+
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #FFDAB9; /* Light peach */
+    min-width: 150px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    color: #4a2c2a;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #E97451;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Align regular content to the left */
+section {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px 0 40px 20px; /* Left-aligned */
+    padding-bottom: 20px;
+}
+
+/* Style headings */
+h2 {
+    color: #d64b27; /* Warm deep red */
+}
+
